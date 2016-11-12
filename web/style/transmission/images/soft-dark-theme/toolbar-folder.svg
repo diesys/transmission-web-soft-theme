@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 32 32"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="toolbar-folder.svg"
+   inkscape:export-filename="/home/lip/grafica/transmission/web/style/transmission/images/toolbar-folder.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#90fff4"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="13.182961"
+     inkscape:cx="-2.1286889"
+     inkscape:cy="21.249706"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs3051">
+    <style
+       type="text/css"
+       id="current-color-scheme">
+      .ColorScheme-Text {
+        color:#4d4d4d;
+      }
+      </style>
+  </defs>
+  <path
+     style="color:#4d4d4d;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.93483531;stroke-opacity:1"
+     d="m 4.7819754,4.7819754 0,22.4360516 12.1528626,0 0,-0.934838 -11.2180275,0 0,-12.152858 4.6741795,0 2.804503,-2.80451 13.087696,0 0,5.609017 0.934838,0 0,-9.3483562 -9.348358,0 -2.804507,-2.8045064 -10.2831866,0 z M 21.60901,16.934838 l 0,4.674172 -4.674172,0 0,0.934838 4.674172,0 0,4.674179 0.934838,0 0,-4.674179 4.674179,0 0,-0.934838 -4.674179,0 0,-4.674172 -0.934838,0 z"
+     id="path99"
+     class="ColorScheme-Text"
+     inkscape:connector-curvature="0" />
+</svg>

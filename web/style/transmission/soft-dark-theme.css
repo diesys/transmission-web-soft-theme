@@ -1,0 +1,406 @@
+body {
+  margin: 0 0;
+}
+
+/* TOOLBAR */
+
+div#toolbar {
+  width: 100%;
+  height: auto;
+  margin: 0 0;
+  padding: 10px;
+  position: fixed;
+  background-color: #c91e27;
+  z-index: 10001;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+
+  transition: opacity .2s ease-out;
+}
+
+div#toolbar div {
+  opacity: 1;
+  transition: opacity .2s ease-out;
+}
+
+div#toolbar div:hover {
+  opacity: .6;
+}
+
+div#toolbar > div#toolbar-separator {
+  height: 20px;
+  margin-left: 4px;
+  margin-bottom: 8px;
+  border-left: 2px solid rgba(0, 0, 0, 0.15);
+  width: 1px;
+}
+
+/* INSPECTOR */
+
+div#toolbar > div#toolbar-open {
+  background-image: url("images/soft-light-theme/toolbar-folder.png");}
+div#toolbar > div#toolbar-remove {
+  background-image: url("images/soft-light-theme/toolbar-close.png");}
+div#toolbar > div#toolbar-start {
+  background-image: url("images/soft-light-theme/toolbar-start.png");}
+div#toolbar > div#toolbar-pause {
+  background-image: url("images/soft-light-theme/toolbar-pause.png");}
+div#toolbar > div#toolbar-start-all {
+  background-image: url("images/soft-light-theme/toolbar-start-all.png");}
+div#toolbar > div#toolbar-pause-all {
+  background-image: url("images/soft-light-theme/toolbar-pause-all.png");}
+div#toolbar > div#toolbar-inspector {
+  background-image: url("images/soft-light-theme/toolbar-info.png");}
+div#toolbar > div#toolbar-inspector {
+  background-image: url("images/soft-light-theme/toolbar-info.png");
+  /*float: right;*/
+  height: 34px;
+  width: 40px;
+  position: relative;
+  right: 15px;
+}
+
+/* STATUSBAR */
+
+#statusbar {
+  top: 58px;
+  /*overflow: hidden;*/
+  position: fixed;
+  background-color: #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 10;
+  box-shadow: 0 2px 30px -5px rgba(0, 0, 0, 0.3);
+  font-size: 1.2em;
+  color: #444;
+  text-align: left;
+}
+#statusbar #filter {
+  left: 0px;
+  display: inline-block;
+  padding: 5px;
+}
+
+#statusbar #filter input#torrent_search {
+  border-radius: 3px;
+  border: none;
+  color: #444;
+  margin: 10px;
+  padding: 7px;
+}
+
+#statusbar #filter #filter-count {
+  margin: 5px;
+  display: inline-block;
+}
+
+#statusbar #speed-info {
+  position: relative;
+  height: 40px;
+  padding: 10px;
+  top: 8px;
+  right: 20px;
+}
+
+#statusbar #speed-info * {
+  display: inline-block;
+}
+
+#speed-dn-container {
+  position: relative;
+  top: 14px;
+  right: -58px;
+  margin: 5px;
+}
+
+#speed-up-container {
+  display: block;
+  top: -30px;
+}
+
+#statusbar select {
+  padding: 4px;
+  margin: 0 5px;
+  color: #444;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+/*#statusbar select option {
+  background-color: #c91e27;
+  border: none;
+}*/
+
+#statusbar #filter input#torrent_search, #statusbar select {
+  box-shadow: 0 2px 6px -3px rgba(0,0,0,.3);
+  background: #fff;
+  transition: box-shadow .3s;
+}
+
+#statusbar #filter input#torrent_search:hover, #statusbar select:hover,
+#statusbar #filter input#torrent_search:active, #statusbar select:active,
+#statusbar #filter input#torrent_search:focus {
+  box-shadow: 0 3px 7px -2px rgba(0,0,0,.3);
+}
+
+#statusbar input:focus, #statusbar select:focus {
+  outline: 0;
+}
+
+/* TORRENT LIST */
+
+ul.torrent_list div.torrent_progress_bar {
+  background-image: none;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.paused {
+  border-color: #989898;
+  background-color: #888888;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.magnet {
+  background-position: left -20px;
+  border-color: #CFCFCF;
+  background-color: #bFbFbF;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.leeching {
+  border-color: #b90e07;
+  background-color: #c91e27;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.leeching.queued {
+  border-color: #b90e07;
+  background-color: #c91e27;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.seeding {
+  border-color: #269E30;
+  background-color: #168E20;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.seeding.queued {
+  border-color: #8A998D;
+  background-color: #7A897D;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.paused {
+  border-color: #CFCFCF;
+  background-color: #bFbFbF;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.magnet {
+  border-color: #D47778;
+  background-color: #c46768;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.leeching {
+  border-color: #CFCFCF;
+  background-color: #bFbFbF;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.leeching.queued {
+  border-color: #C4C4C4;
+  background-color: #b4b4b4;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.seeding {
+  border-color: #29AD35;
+  background-color: #199D25;
+}
+
+/* TORRENT INSPECTOR */
+
+/*div#torrent_inspector {
+  margin: 0;
+  padding-top: 20px;
+  background: #fff;
+  top: 50px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  animation: appear .3s;
+  padding: 20px;
+  font-size: 1.2em;
+  overflow: hidden;
+}*/
+
+/*div#torrent_inspector #inspector-tabs-wrapper {
+  text-align: center;
+  margin: 30px 5px 50px 20px;
+}*/
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > * {
+  border: none;
+  border-bottom: 1px solid #c91e27;
+  width: 50px;
+  height: 30px;
+  transition: all .1s;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > *:hover, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > *:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > *.selected {
+  border-width: 3px;
+  transition: all .1s;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info {
+  background-image: url("images/soft-light-theme/inspector-info.png");
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers {
+  background-image: url("images/soft-light-theme/inspector-trackers.png");
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files {
+  background-image: url("images/soft-light-theme/inspector-files.png");
+}
+
+/* FOOTER */
+
+div.torrent_footer {
+  height: auto;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+  position: fixed;
+  background-color: #eee;
+  padding: 5px;
+  z-index: 10;
+}
+
+div.torrent_footer > div {
+  margin: 1px 4px;
+  width: 18px;
+  height: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  -webkit-user-select: none;
+  border-radius: 3px;
+  cursor: default;
+  background-image: none;
+  transition: all .3s;
+}
+
+div.torrent_footer #settings_menu {
+  background-image: url("images/settings.png");}
+div.torrent_footer #prefs-button {
+  background-image: url("images/wrench.png");}
+div.torrent_footer #turtle-button {
+  background-image: url("images/turtle.png");}
+div.torrent_footer #turtle-button:active, div.torrent_footer #turtle-button.selected {
+  background-image: url("images/blue-turtle.png");}
+div.torrent_footer #compact-button {
+  background-image: url("images/compact.png");}
+
+
+div.torrent_footer > *.selected, div.torrent_footer > *:hover {
+  background-color: #fff;
+}
+
+div.torrent_footer > *:active {
+  background-color: #ddd;
+  transform: translateY(1px);
+}
+
+/* DIALOGS */
+
+@keyframes appear {
+    0% {opacity: 0; left: 25%; transform: scaleY(.1);}
+    100% {opacity: 1;}
+}
+
+div.dialog_container {
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10001;
+  font-size: 1.2em;
+}
+
+div.dialog_container div.dialog_window {
+  background-color: #fff;
+  margin: 0;
+  padding: 15px 15px 10px 30px;
+  width: auto;
+  overflow: hidden;
+  box-shadow: 0 3px 50px -10px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 2px;
+  animation: appear .5s cubic-bezier(.47,0,.5,1.2);
+}
+
+/*  */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+div.dialog_container .dialog_logo {
+  margin: 20px;
+  margin-left: 0px;
+  background: transparent url("images/logo.png") top left no-repeat;
+}
+
+div.dialog_container div.dialog_window h2.dialog_heading {
+  margin-top: 20px;
+}
+
+div.dialog_container div.dialog_window div.dialog_message {
+  width: auto;
+  margin: 30px;
+}
+
+div.dialog_container div.dialog_window a {
+  display: inline-block;
+  margin: 5px;
+  padding: 7px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  color: #444;
+  /*-webkit-appearance: button;*/
+  /*font: -webkit-control;*/
+  cursor: default;
+  box-shadow: 0 0 1px -1px rgba(0,0,0,0);
+  transition: all .3s ease;
+}
+
+div.dialog_container div.dialog_window a:hover {
+  box-shadow: 0 1px 6px -1px rgba(0,0,0,.4);
+}
+
+div.dialog_container div.dialog_window a:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 5px -1px rgba(0,0,0,.4) inset;
+}
+
+div#upload_container div.dialog_window div.dialog_message label {
+  display: block;
+}
+
+div#upload_container div.dialog_window div.dialog_message input {
+  display: block;
+}
+
+div#upload_container div.dialog_window div.dialog_message input[type=text] {
+  padding: 2px;
+}
+
+div#upload_container div.dialog_window div.dialog_message input[type=checkbox] {
+  margin: 15px 3px 0 0;
+  display: inline;
+  width: auto;
+}
+
+div#upload_container div.dialog_window div.dialog_message #auto_start_label {
+  display: inline;
+}
+
+div.dialog_container div.dialog_window form {
+  padding: 0;
+}
+
+div#move_container input#torrent_path {
+  padding: 2px;
+}
+
+iframe#torrent_upload_frame {
+  margin: 0;
+}
