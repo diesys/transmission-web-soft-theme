@@ -14,9 +14,9 @@
    sodipodi:docname="favicon.svg"
    width="16"
    height="16"
-   inkscape:export-filename="/home/lip/grafica/transmission/web/images/favicon.ico"
-   inkscape:export-xdpi="112.5"
-   inkscape:export-ydpi="112.5">
+   inkscape:export-filename="/home/lip/grafica/transmission-soft-theme/web/images/logo-soft.png"
+   inkscape:export-xdpi="1125"
+   inkscape:export-ydpi="1125">
   <metadata
      id="metadata67">
     <rdf:RDF>
@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,9 +42,9 @@
      inkscape:window-height="713"
      id="namedview65"
      showgrid="false"
-     inkscape:zoom="14.753151"
-     inkscape:cx="11.097144"
-     inkscape:cy="-1.8348051"
+     inkscape:zoom="33.13696"
+     inkscape:cx="7.06841"
+     inkscape:cy="7.8220855"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
