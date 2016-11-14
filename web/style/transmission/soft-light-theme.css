@@ -238,6 +238,7 @@ div#torrent_inspector {
   background: #fff;
   animation: slidein .5s;
   padding: 20px;
+  padding-left: 40px;
   font-size: 1.2em;
   overflow: hidden;
   border-left: none;
@@ -254,7 +255,7 @@ div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > * {
   border-bottom: 1px solid #c91e27;
   width: 50px;
   height: 30px;
-  transition: all .1s;
+  /*transition: all .2s;*/
 }
 
 div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files,
@@ -264,12 +265,12 @@ div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-t
   border-radius: 0;
   background-image: none;
   background-color: transparent;
-  transition: all .2s;
+  /*transition: all .2s;*/
 }
 
 div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > *:hover,
 div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > *:active,
-div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs.selected {
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs .selected {
   border-width: 3px;
 }
 
@@ -366,10 +367,6 @@ div.torrent_footer > *:active {
   transform: translateY(1px);
 }
 
-#torrent_context_menu, #footer_super_menu, #footer_download_rate_menu, #footer_upload_rate_menu, #footer_sort_menu {
-  box-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
-
 /* DIALOGS and WIDGETS */
 
 @keyframes appear {
@@ -399,6 +396,10 @@ div.dialog_container div.dialog_window {
 
 .ui-dialog, .ui-widget {
   box-shadow: 0 3px 50px -10px rgba(0, 0, 0, 0.5);
+  /*position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);*/
 }
 
 .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
@@ -406,10 +407,6 @@ div.dialog_container div.dialog_window {
   cursor: default;
   font-size: 1.1em;
   border: none;
-}
-
-#prefs-dialog {
-  box-shadow: none;
 }
 
 .ui-dialog, .ui-dialog-content .ui-widget {
@@ -432,9 +429,10 @@ div.dialog_container div.dialog_window {
 .ui-tabs .ui-tabs-nav {
   padding: 5px;
   padding-right: 0;
+  padding-left: 25px;
   border-radius: 0;
   border: none;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-top: 5px;
   margin-right: 0px;
 }
@@ -443,10 +441,24 @@ div.dialog_container div.dialog_window {
   color: #333;
   background: none;
 }
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  cursor: pointer;
+  border: none;
+}
 
 .ui-tabs .ui-tabs-nav li {
+  border: none;
   border-bottom: 3px solid transparent;
   font-weight: normal;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: none;
+}
+
+#prefs-dialog {
+  box-shadow: none;
+  background: #fff;
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
@@ -455,18 +467,19 @@ div.dialog_container div.dialog_window {
 }
 
 .ui-menu-icons .ui-menu-item {
-  padding: 10px;
+  padding: 6px 10px;
+  color: #333;
 }
 
-.ui-menu-icons .ui-menu-item li {
-}
-
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-menu-icons .ui-menu-item .ui-state-active {
-  background: #ddd;
+.ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-menu-icons .ui-menu-item .ui-state-active,
+.ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-menu-icons .ui-menu-item .ui-state-focus {
+  background: #e6e6e6;
+  border-color: transparent;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   background: none;
+  border-color: #eee;
   border-radius: 0;
 }
 
@@ -483,6 +496,15 @@ span .ui-button-icon-primary .ui-icon .ui-icon-closethick {
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   color: #fff;
+}
+
+#torrent_context_menu, #footer_super_menu, #footer_download_rate_menu, #footer_upload_rate_menu, #footer_sort_menu {
+  box-shadow: 0 1px 3px rgba(0,0,0,.5);
+  border: none;
+}
+
+.ui-menu .ui-menu-divider {
+  border-color: #e8e8e8;
 }
 
 /*  */
@@ -571,8 +593,7 @@ ul.torrent_list li.torrent.compact {
   font-size: 1.2em;
   padding-left: 10px;
 }
-@media screen and (min-device-width: 481px) {
-  ul.torrent_list li.torrent {
-    border-bottom: 1px solid #e5e5e5;
-  }
+ul.torrent_list li.torrent {
+  border-bottom: 1px solid #eee;
+
 }
