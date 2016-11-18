@@ -12,7 +12,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="toolbar-close.svg"
-   inkscape:export-filename="/home/lip/grafica/transmission/web/style/transmission/images/toolbar-close.png"
+   inkscape:export-filename="/home/lip/grafica/transmission-soft-theme/web/style/transmission/images/soft-dark-theme/toolbar-close.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <metadata
@@ -42,15 +42,15 @@
      inkscape:window-height="713"
      id="namedview12"
      showgrid="false"
-     inkscape:zoom="13.203577"
-     inkscape:cx="11.162186"
-     inkscape:cy="21.112137"
+     inkscape:zoom="16.652804"
+     inkscape:cx="1.1966044"
+     inkscape:cy="19.858206"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <path
-     style="fill:#ffffff;stroke:#ffffff;stroke-width:0.93493706;stroke-opacity:1"
+     style="fill:#141414;stroke:#141414;stroke-width:0.93493706;stroke-opacity:1;fill-opacity:1"
      d="m 12.260252,4.7807544 0,2.8048114 0.934937,0 0,-1.8698744 5.609622,0 0,1.8698744 0.934937,0 0,-2.8048114 -7.479496,0 z m -7.4794976,3.7397484 0,0.9349371 22.4384896,0 0,-0.9349371 -22.4384896,0 z m 3.7397484,1.8698752 0,16.828866 14.9589932,0 0,-16.828866 -0.934937,0 0,15.893929 -13.0891191,0 0,-15.893929 -0.9349371,0 z"
      id="path6"
      inkscape:connector-curvature="0" />

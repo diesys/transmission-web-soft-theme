@@ -12,7 +12,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="toolbar-info.svg"
-   inkscape:export-filename="/home/lip/grafica/transmission/web/style/transmission/images/toolbar-info.png"
+   inkscape:export-filename="/home/lip/grafica/transmission-soft-theme/web/style/transmission/images/soft-dark-theme/toolbar-info.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <metadata
@@ -40,9 +40,9 @@
      inkscape:window-height="713"
      id="namedview7"
      showgrid="false"
-     inkscape:zoom="14.805083"
-     inkscape:cx="-10.240411"
-     inkscape:cy="4.820646"
+     inkscape:zoom="13.203578"
+     inkscape:cx="7.7801809"
+     inkscape:cy="9.5198218"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -65,7 +65,7 @@
       </style>
   </defs>
   <path
-     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.75921685;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:100;stroke-opacity:1"
+     style="opacity:1;fill:#141414;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.75921685;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:100;stroke-opacity:1"
      d="m 16.056614,7.9419044 a 8.8800779,8.8800779 0 0 0 -8.8811242,8.8792186 8.8800779,8.8800779 0 0 0 8.8811242,8.881125 8.8800779,8.8800779 0 0 0 8.879225,-8.881125 8.8800779,8.8800779 0 0 0 -8.879225,-8.8792186 z m -0.941651,4.3323416 1.773188,0 0,1.771289 -1.773188,0 0,-1.477024 0,-0.294265 z m 0,3.430567 1.773188,0 0,6.192866 -1.773188,0 0,-5.898601 0,-0.294265 z"
      id="path4164"
      inkscape:connector-curvature="0" />

@@ -12,7 +12,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="toolbar-start.svg"
-   inkscape:export-filename="/home/lip/grafica/transmission/web/style/transmission/images/toolbar-start.png"
+   inkscape:export-filename="/home/lip/grafica/transmission-soft-theme/web/style/transmission/images/soft-dark-theme/toolbar-start.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <metadata
@@ -40,9 +40,9 @@
      inkscape:window-height="713"
      id="namedview7"
      showgrid="false"
-     inkscape:zoom="4.15021"
-     inkscape:cx="28.636583"
-     inkscape:cy="-22.081205"
+     inkscape:zoom="9.3217607"
+     inkscape:cx="5.7331846"
+     inkscape:cy="7.9560388"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -58,7 +58,7 @@
       </style>
   </defs>
   <path
-     style="color:#4d4d4d;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.91714871;stroke-opacity:1"
+     style="color:#4d4d4d;fill:#141414;fill-opacity:1;stroke:#141414;stroke-width:1.91714871;stroke-opacity:1"
      d="m 9.5571251,8.3314061 0,15.3371879 L 22.977163,16 Z"
      id="path105"
      class="ColorScheme-Text"

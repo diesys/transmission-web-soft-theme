@@ -12,7 +12,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="toolbar-pause.svg"
-   inkscape:export-filename="/home/lip/grafica/transmission/web/style/transmission/images/toolbar-pause.png"
+   inkscape:export-filename="/home/lip/grafica/transmission-soft-theme/web/style/transmission/images/soft-dark-theme/toolbar-pause.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <metadata
@@ -40,9 +40,9 @@
      inkscape:window-height="713"
      id="namedview7"
      showgrid="false"
-     inkscape:zoom="16.60084"
-     inkscape:cx="-0.0058911321"
-     inkscape:cy="18.234567"
+     inkscape:zoom="9.3217608"
+     inkscape:cx="-1.9430944"
+     inkscape:cy="6.5155951"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -58,7 +58,7 @@
       </style>
   </defs>
   <path
-     style="color:#4d4d4d;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.88888884;stroke-opacity:1"
+     style="color:#4d4d4d;fill:#141414;fill-opacity:1;stroke:#141414;stroke-width:1.88888884;stroke-opacity:1"
      d="m 8.4444442,8.4444442 0,15.1111118 3.7777798,0 0,-15.1111118 z m 11.3333318,0 0,15.1111118 3.77778,0 0,-15.1111118 z"
      id="path8"
      class="ColorScheme-Text"

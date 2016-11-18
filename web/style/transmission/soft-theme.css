@@ -1,0 +1,580 @@
+9html {
+  cursor: default;
+}
+
+body {
+  margin: 0 0;
+}
+
+/* TOOLBAR */
+
+div#toolbar {
+  width: 100%;
+  height: 36px;
+  margin: 0 0;
+  padding: 10px;
+  position: fixed;
+  background-image: none;
+  z-index: 11;
+  border-bottom: none;
+  overflow: auto;
+
+  transition: opacity .2s ease-out;
+}
+
+div#toolbar div {
+  opacity: 1;
+  transition: opacity .2s ease-out;
+}
+
+div#toolbar div:hover {
+  opacity: .6;
+}
+
+div#toolbar > div#toolbar-separator {
+  height: 20px;
+  margin-left: 4px;
+  margin-bottom: 8px;
+  width: 1px;
+}
+
+div#toolbar > div#toolbar-inspector {
+  height: 34px;
+  width: 40px;
+  position: relative;
+  right: 15px;
+}
+
+/* STATUSBAR */
+
+#statusbar {
+  top: 56px;
+  height: 45px;
+  position: fixed;
+  background-image: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  z-index: 10;
+  font-size: 1.2em;
+  text-align: left;
+  border: none;
+}
+#statusbar #filter {
+  left: 0px;
+  position: relative;
+  display: inline-block;
+  top: 7px;
+  padding: 5px;
+}
+
+#statusbar #filter input#torrent_search {
+  border-radius: 3px;
+  border: none;
+  height: auto;
+  width: auto;
+  /*margin: 2px;*/
+  padding: 4px;
+}
+
+#statusbar #filter #filter-count {
+  margin: 5px;
+  display: inline-block;
+}
+
+#statusbar #speed-info {
+  position: relative;
+  height: 40px;
+  padding: 5px;
+  top: 0px;
+  right: 20px;
+}
+
+#statusbar #speed-info * {
+  display: inline-block;
+}
+
+#speed-dn-container {
+  position: relative;
+  top: 14px;
+  right: -58px;
+  margin: 5px;
+}
+
+#speed-up-container {
+  display: block;
+  top: -30px;
+}
+
+#statusbar select {
+  padding: 4px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+/*#statusbar select option {
+  background-color: #c91e27;
+  border: none;
+}*/
+
+#statusbar #filter {
+  padding: 2px;
+}
+
+#statusbar #filter input#torrent_search, #statusbar select {
+  transition: box-shadow .3s;
+}
+
+#statusbar input:focus, #statusbar select:focus {
+  outline: 0;
+}
+
+/* TORRENT INSPECTOR */
+
+@keyframes slidein {
+    0% {transform: translateX(5%); opacity: .8;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+
+div#torrent_inspector {
+  margin: 0;
+  bottom: 0;
+  animation: slidein .5s;
+  padding: 15px 15px 25px 25px;
+  font-size: 1.2em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-left: none;
+  width: 340px;
+}
+
+div#torrent_inspector #inspector-page-info {
+  margin-bottom: 30px;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper {
+  text-align: center;
+  margin: 30px 5px 50px 0px;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > * {
+  border: none;
+  width: 50px;
+  height: 30px;
+  border-bottom: 3px solid transparent;
+  transition: all .2s;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers {
+  border-radius: 0;
+  background-image: none;
+  background-color: transparent;
+  /*transition: all .2s;*/
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > *:hover,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > *:active,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs .selected {
+  border-width: 3px;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info:active,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info.selected {
+  background-color: transparent;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers:active,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers.selected {
+  background-color: transparent;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files:active,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files.selected {
+  background-color: transparent;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers:active,
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers.selected {
+  background-color: transparent;
+}
+
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > *:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > .selected {
+  background-image: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+div#torrent_inspector #inspector_file_list li {
+  padding: 7px 0;
+}
+
+div#torrent_inspector li.inspector_tracker_entry.odd {
+  background-color: transparent;
+}
+
+div.inspector_group_label {
+  padding-bottom: 5px;
+}
+
+/* FOOTER */
+
+div.torrent_footer {
+  height: auto;
+  font-size: 1.2em;
+  position: fixed;
+  background-image: none;
+  padding: 5px;
+  z-index: 4;
+}
+
+div.torrent_footer > div {
+  margin: 1px 4px;
+  width: 18px;
+  height: 10px;
+  padding: 5px;
+  -webkit-user-select: none;
+  border-radius: 3px;
+  cursor: default;
+  background-image: none;
+  transition: all .3s;
+}
+
+div.torrent_footer > div {
+    border-radius: 3px;
+}
+
+
+div.torrent_footer > *:active {
+  transform: translateY(1px);
+}
+
+div.torrent_footer #settings_menu, div.torrent_footer #prefs-button,
+div.torrent_footer #turtle-button, div.torrent_footer #compact-button {
+  border-radius: 3px;
+}
+
+/* UI elements */
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  border-radius: 0px;
+  cursor: default;
+  font-size: 1.1em;
+  border: none;
+}
+
+.ui-dialog, .ui-dialog-content .ui-widget {
+  margin: 5px;
+  padding: 15px;
+  padding-top: 5px;
+}
+
+.ui-widget-header {
+  background: none;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  padding: 5px;
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding: 5px;
+  padding-right: 0;
+  padding-left: 25px;
+  border-radius: 0;
+  border: none;
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-right: 0px;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  background: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-weight: normal;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: none;
+}
+
+#prefs-dialog, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-menu-icons .ui-menu-item .ui-state-active, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-menu-icons .ui-menu-item .ui-state-focus {
+  box-shadow: none;
+  background: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  font-weight: bold;
+}
+
+.ui-menu-icons .ui-menu-item {
+  padding: 6px 10px;
+  border-color: transparent;
+  /*font-size: 1.1em;*/
+}
+
+.ui-widget-content .ui-menu-divider, .ui-widget-content .ui-menu-divider:hover, .ui-widget-content .ui-menu-divider:active {
+  background: transparent;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-image: none;
+}
+
+.ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-menu-icons .ui-menu-item .ui-state-active,
+.ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-menu-icons .ui-menu-item .ui-state-focus {
+  background: none;
+  border-color: transparent;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: none;
+  border-radius: 0;
+}
+
+span .ui-button-icon-primary .ui-icon .ui-icon-closethick {
+  margin: 0;
+  padding: 0;
+  transition: all .3s;
+}
+
+.ui-widget-content {
+  margin-top: 0px;
+}
+
+#torrent_context_menu, #footer_super_menu, #footer_download_rate_menu, #footer_upload_rate_menu, #footer_sort_menu {
+  transition: background .1s;
+}
+
+
+#torrent_context_menu li, #footer_super_menu li, #footer_download_rate_menu li, #footer_upload_rate_menu li, #footer_sort_menu li {
+  padding-left: 18px;
+  transition: background .1s;
+}
+
+/* DIALOGS and WIDGETS */
+
+@keyframes appear {
+    0% {opacity: 0; left: 25%; transform: scaleY(.1);}
+    100% {opacity: 1;}
+}
+
+#torrent_context_menu {
+  font-size: 1.2em;
+}
+
+#torrent_context_menu li {
+  padding: 5px 12px 5px 12px;
+}
+
+div.dialog_container {
+  top: 15%;
+  left: 50%;
+  margin: auto auto;
+  transform: translateX(-50%);
+  z-index: 30;
+  font-size: 1.2em;
+}
+
+div.dialog_container div.dialog_window {
+  padding: 15px 15px 10px 0px;
+  width: auto;
+  max-width: 50%;
+  overflow: hidden;
+  border: none;
+  border-radius: 2px;
+  animation: appear .5s cubic-bezier(.47,0,.5,1.2);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+div.dialog_container .dialog_logo, #about-dialog > #about-logo {
+  background: transparent url("images/logo-soft.png") top left no-repeat;
+}
+
+div.dialog_container div.dialog_window {
+  margin: auto auto;
+  max-width: 40%;
+}
+
+@media screen and (max-width: 640px){
+  div.dialog_container div.dialog_window {
+    margin: auto auto;
+    max-width: 80%;
+  }
+}
+
+div.dialog_container div.dialog_window h2.dialog_heading, div.dialog_container .dialog_logo, #about-dialog>#about-logo {
+  margin:  5px 30px;
+  text-align: center;
+}
+
+div.dialog_container div.dialog_window div.dialog_message {
+  width: 90%;
+  margin: 25px;
+  margin-bottom: 0px;
+}
+
+div.dialog_container div.dialog_window a, div.dialog_container div.dialog_window div.dialog_message a {
+  display: inline-block;
+  margin: 5px;
+  padding: 7px;
+  border-radius: 3px;
+  /*-webkit-appearance: button;*/
+  /*font: -webkit-control;*/
+  cursor: default;
+  transition: all .3s ease;
+}
+
+/*div.dialog_container div.dialog_window a:active {
+  transform: translateY(1px);
+}*/
+
+div.dialog_container div.dialog_window a:hover, div.dialog_container div.dialog_window a:active
+div.dialog_container div.dialog_window div.dialog_message a:hover, div.dialog_container div.dialog_window div.dialog_message a:active {
+  background: transparent;
+}
+
+div#upload_container div.dialog_window div.dialog_message label {
+  display: block;
+}
+
+div#upload_container div.dialog_window div.dialog_message input {
+  display: block;
+}
+
+div#upload_container div.dialog_window div.dialog_message #auto_start_label {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 0px;
+  padding-left: 0;
+  position: relative;
+  float: left;
+}
+
+/*div#upload_container div.dialog_window div.dialog_message input[type=checkbox] {
+
+}*/
+
+div#upload_container div.dialog_window div.dialog_message input, div#upload_container div.dialog_window div.dialog_message input[type=text], div.dialog_container div.dialog_window form, div#move_container input#torrent_path {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+iframe#torrent_upload_frame {
+  margin: 0;
+}
+
+/* TORRENT CONTAINER and TORRENT LIST */
+
+div#torrent_container {
+  top:103px;
+}
+
+ul.torrent_list li {
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+ul.torrent_list li.torrent a div {
+  height: 20px;
+  width: 20px;
+  bottom: 3px;
+  left: 4px;
+  position: relative;
+  opacity: .5;
+  font-size: 1.15em;
+
+  transition: opacity .3s;
+}
+
+ul.torrent_list li.torrent a div:hover {
+  opacity: .8;
+}
+
+ul.torrent_list li.torrent div.torrent_progress_details, ul.torrent_list li.torrent div.torrent_peer_details, ul.torrent_list li.torrent div.torrent_progress_details, ul.torrent_list li.torrent div.torrent_peer_details {
+  padding: 3px 0px;
+}
+
+/* TORRENT PROGRESS BAR */
+
+ul.torrent_list div.torrent_progress_bar {
+  background-image: none;
+  /*margin-top: 3px;*/
+  /*margin-bottom: 3px;*/
+  border-radius: 3px;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.paused {
+  border-color: #888888;
+  background-color: #888888;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.magnet {
+  border-color: #bFbFbF;
+  background-color: #bFbFbF;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.leeching {
+  border-color: #c91e27;
+  background-color: #c91e27;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.leeching.queued {
+  border-color: #c91e27;
+  background-color: #c91e27;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.seeding {
+  border-color: #168E20;
+  background-color: #168E20;
+}
+
+ul.torrent_list div.torrent_progress_bar.complete.seeding.queued {
+  border-color: #8A998D;
+  background-color: #8A998D;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.paused {
+  border-color: #bFbFbF;
+  background-color: #bFbFbF;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.magnet {
+  border-color: #c46768;
+  background-color: #c46768;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.leeching {
+  border-color: #bFbFbF;
+  background-color: #bFbFbF;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.leeching.queued {
+  border-color: #b4b4b4;
+  background-color: #b4b4b4;
+}
+
+ul.torrent_list div.torrent_progress_bar.incomplete.seeding {
+  border-color: #199D25;
+  background-color: #199D25;
+}

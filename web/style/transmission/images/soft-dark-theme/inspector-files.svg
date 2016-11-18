@@ -12,7 +12,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="inspector-files.svg"
-   inkscape:export-filename="/home/lip/grafica/transmission/web/style/transmission/images/inspector-files.png"
+   inkscape:export-filename="/home/lip/grafica/transmission-soft-theme/web/style/transmission/images/soft-dark-theme/inspector-files.png"
    inkscape:export-xdpi="56.25"
    inkscape:export-ydpi="56.25">
   <metadata
@@ -39,8 +39,8 @@
      inkscape:window-height="713"
      id="namedview7"
      showgrid="false"
-     inkscape:zoom="9.867947"
-     inkscape:cx="7.95747"
+     inkscape:zoom="22.164334"
+     inkscape:cx="-1.6751226"
      inkscape:cy="18.913903"
      inkscape:window-x="0"
      inkscape:window-y="27"
@@ -60,7 +60,7 @@
       </style>
   </defs>
   <path
-     style="color:#4d4d4d;fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:0.98363286;stroke-opacity:1"
+     style="color:#4d4d4d;fill:#cccccc;fill-opacity:1;stroke:#cccccc;stroke-width:0.98363286;stroke-opacity:1"
      d="m 10.402428,3.1675976 0,4.6260124 -6.3793616,0 0,20.90598 16.8341116,0 0,-4.627967 6.379362,0 0,-14.8083209 -5.892128,-6.0957045 -0.840383,0 -10.101601,0 z m 0.842272,0.8696982 9.259329,0 0,6.0976592 5.89024,0 0,13.06697 -5.537091,0 0,-9.310656 -5.892128,-6.097659 -0.842272,0 -2.878078,0 0,-3.7563142 z m -6.3793614,4.6279668 9.2574394,0 0,6.0976594 5.892128,0 0,13.065015 -15.1495674,0 0,-19.1626744 z"
      id="path8"
      inkscape:connector-curvature="0" />
