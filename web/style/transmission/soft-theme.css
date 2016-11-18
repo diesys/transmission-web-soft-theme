@@ -421,8 +421,19 @@ div.dialog_container div.dialog_window {
   }
 }
 
-div.dialog_container div.dialog_window h2.dialog_heading, div.dialog_container .dialog_logo, #about-dialog>#about-logo {
-  margin:  5px 30px;
+div.dialog_container .dialog_logo, #about-dialog>#about-logo {
+  margin: 0;
+  margin-left: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+div.dialog_container div.dialog_window h2.dialog_heading {
+  position: relative;
+  margin-top:  15px;
+  width: auto;
+  left: 33%;
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -475,9 +486,13 @@ div#upload_container div.dialog_window div.dialog_message #auto_start_label {
 }*/
 
 div#upload_container div.dialog_window div.dialog_message input, div#upload_container div.dialog_window div.dialog_message input[type=text], div.dialog_container div.dialog_window form, div#move_container input#torrent_path {
-  padding: 5px;
+  padding: 8px;
   border: none;
   border-radius: 3px;
+}
+
+div#upload_container div.dialog_window div.dialog_message input#torrent_upload_file {
+  background: transparent;
 }
 
 iframe#torrent_upload_frame {
