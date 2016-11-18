@@ -12,8 +12,8 @@ See the [wiki](https://git.eigenlab.org/sbiego/transmission-web-soft-theme/wikis
 
 ##### Light  
 
-![soft light](https://git.eigenlab.org/sbiego/transmission-web-soft-theme/raw/testing/transmission-web-soft-light-screen.png)
+![soft light](https://git.eigenlab.org/sbiego/transmission-web-soft-theme/raw/master/transmission-web-soft-light-screen.png)
 
 ##### Dark  
 
-![soft dark](https://git.eigenlab.org/sbiego/transmission-web-soft-theme/raw/testing/transmission-web-soft-dark-screen.png)
+![soft dark](https://git.eigenlab.org/sbiego/transmission-web-soft-theme/raw/master/transmission-web-soft-dark-screen.png)
