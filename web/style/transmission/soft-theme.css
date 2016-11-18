@@ -492,12 +492,10 @@ div#upload_container div.dialog_window div.dialog_message input, div#upload_cont
 }
 
 div#upload_container div.dialog_window div.dialog_message input#torrent_upload_file {
-  background: transparent;
-}
+  background: transparent;}
 
 iframe#torrent_upload_frame {
-  margin: 0;
-}
+  margin: 0;}
 
 /* TORRENT CONTAINER and TORRENT LIST */
 
