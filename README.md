@@ -1,7 +1,7 @@
 Transmission-web soft theme
 ===
 
-### [Transmission/web](https://github.com/transmission/transmission) interface in two variants made by
+### [Transmission](https://github.com/transmission/transmission) web interface theme in two variants made by
 
  * three different CSS stylesheet, one for impagination and the other two for dark and light theme
  * a set of images (favicon and UI icons)
