@@ -57,6 +57,10 @@ tr.inspector_peer_entry div.encrypted-peer-cell {
   background: #222;
 }
 
+/*#statusbar select, select {
+    background: url('images/soft-dark-theme/select.png') no-repeat transparent;
+}*/
+
 #statusbar #filter input#torrent_search, #statusbar select {
   box-shadow: 0 2px 7px -3px rgba(0,0,0,.3);
   background: #222;

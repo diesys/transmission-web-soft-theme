@@ -24,14 +24,13 @@ else
 	installdir='/usr/share/transmission'
 	echo "Directory found! Installing in $installdir/web..."
 	sleep 1
-
 fi
 
 cp -rv ./web/* ${installdir}/web/
 
-echo -e "\nTransmission soft theme successfully installed!\n \nWould you like to apply a soft theme now?\nNOTE:\w if you've already installed it, just modify the " $installdir"/web/index.html following the instructions on the wiki!"
+echo -e "\nTransmission soft theme successfully installed!\n \nWould you like to apply a soft theme now?\nNOTE: if you've already installed it, just modify the " $installdir "/web/index.html following the instructions on the wiki!\n"
 PS3=': '
-options=("Dark" "Light" "Quit")
+options=( "Dark" "Light" "Quit" )
 select opt in "${options[@]}"
 do
 	case $opt in

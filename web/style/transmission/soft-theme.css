@@ -106,17 +106,15 @@ div#toolbar > div#toolbar-inspector {
   top: -30px;
 }
 
-#statusbar select {
+#statusbar select, select {
   padding: 4px;
   margin: 0 5px;
   border: none;
   border-radius: 4px;
+  /*-webkit-appearance: none;*/
+  /*-moz-appearance: none;*/
+  /*appearance: none;*/
 }
-
-/*#statusbar select option {
-  background-color: #c91e27;
-  border: none;
-}*/
 
 #statusbar #filter {
   padding: 2px;
@@ -404,7 +402,6 @@ div.dialog_container div.dialog_window {
   animation: appear .5s cubic-bezier(.47,0,.5,1.2);
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
 div.dialog_container .dialog_logo, #about-dialog > #about-logo {
   background: transparent url("images/logo-soft.png") top left no-repeat;
 }
@@ -414,11 +411,9 @@ div.dialog_container div.dialog_window {
   max-width: 40%;
 }
 
-@media screen and (max-width: 640px){
-  div.dialog_container div.dialog_window {
-    margin: auto auto;
-    max-width: 80%;
-  }
+div.dialog_container div.dialog_window {
+  margin: auto auto;
+  max-width: 80%;
 }
 
 div.dialog_container .dialog_logo, #about-dialog>#about-logo {
@@ -485,8 +480,8 @@ div#upload_container div.dialog_window div.dialog_message #auto_start_label {
 
 }*/
 
-div#upload_container div.dialog_window div.dialog_message input, div#upload_container div.dialog_window div.dialog_message input[type=text], div.dialog_container div.dialog_window form, div#move_container input#torrent_path {
-  padding: 8px;
+div#upload_container div.dialog_window div.dialog_message input, div#upload_container div.dialog_window div.dialog_message input[type=text], div.dialog_container div.dialog_window form, div#move_container input#torrent_path, div#upload_container div.dialog_window div.dialog_message input, div#upload_container div.dialog_window div.dialog_message input[type=text] {
+  padding: 6px;
   border: none;
   border-radius: 3px;
 }
@@ -532,8 +527,6 @@ ul.torrent_list li.torrent div.torrent_progress_details, ul.torrent_list li.torr
 
 ul.torrent_list div.torrent_progress_bar {
   background-image: none;
-  /*margin-top: 3px;*/
-  /*margin-bottom: 3px;*/
   border-radius: 3px;
 }
 
