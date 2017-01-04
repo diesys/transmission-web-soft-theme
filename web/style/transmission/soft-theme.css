@@ -54,7 +54,7 @@ div#toolbar > div#toolbar-inspector {
   background-image: none;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 6px;
+  padding-top: 0px;
   padding-bottom: 0;
   z-index: 10;
   font-size: 1.15em;
@@ -87,8 +87,8 @@ div#toolbar > div#toolbar-inspector {
   position: relative;
   height: 32px;
   padding: 5px;
-  padding-top: 10px;
-  right: 20px;
+  padding-top: 14px;
+  right: 15px;
 }
 
 #statusbar select, select {
@@ -102,13 +102,13 @@ div#toolbar > div#toolbar-inspector {
   /*appearance: none;*/
 }
 
-#statusbar #filter {
-  padding: 2px;
-}
-
 #statusbar #filter input#torrent_search, #statusbar select {
   transition: box-shadow .3s;
-  font-size: 1em;
+  font-size: 1.1em;
+}
+
+#statusbar #filter input#torrent_search {
+  padding: 5px;
 }
 
 #statusbar input:focus, #statusbar select:focus {
