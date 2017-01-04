@@ -56,7 +56,7 @@ div#toolbar > div#toolbar-inspector {
   padding-right: 10px;
   padding-top: 1px;
   z-index: 10;
-  font-size: 1.2em;
+  font-size: 1.15em;
   text-align: left;
   border: none;
 }
@@ -92,6 +92,7 @@ div#toolbar > div#toolbar-inspector {
 
 #statusbar #speed-info * {
   display: inline-block;
+  font-size: 1em;
 }
 
 #speed-dn-container {
@@ -111,6 +112,7 @@ div#toolbar > div#toolbar-inspector {
   margin: 0 5px;
   border: none;
   border-radius: 4px;
+  font-size: 1.05em;
   /*-webkit-appearance: none;*/
   /*-moz-appearance: none;*/
   /*appearance: none;*/
@@ -122,6 +124,7 @@ div#toolbar > div#toolbar-inspector {
 
 #statusbar #filter input#torrent_search, #statusbar select {
   transition: box-shadow .3s;
+  font-size: 1em;
 }
 
 #statusbar input:focus, #statusbar select:focus {
@@ -376,7 +379,7 @@ span .ui-button-icon-primary .ui-icon .ui-icon-closethick {
 }
 
 #torrent_context_menu {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 #torrent_context_menu li {
@@ -503,6 +506,10 @@ ul.torrent_list li {
   padding-left: 10px;
 }
 
+ul.torrent_list li.torrent div.torrent_name {
+  font-size: 1.15em;
+}
+
 ul.torrent_list li.torrent a div {
   height: 20px;
   width: 20px;
@@ -510,7 +517,7 @@ ul.torrent_list li.torrent a div {
   left: 4px;
   position: relative;
   opacity: .5;
-  font-size: 1.15em;
+  font-size: 1.1em;
 
   transition: opacity .3s;
 }
@@ -518,6 +525,7 @@ ul.torrent_list li.torrent a div {
 ul.torrent_list li.torrent a div:hover {
   opacity: .8;
 }
+
 
 ul.torrent_list li.torrent div.torrent_progress_details, ul.torrent_list li.torrent div.torrent_peer_details, ul.torrent_list li.torrent div.torrent_progress_details, ul.torrent_list li.torrent div.torrent_peer_details {
   padding: 3px 0px;
