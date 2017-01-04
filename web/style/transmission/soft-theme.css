@@ -482,6 +482,7 @@ iframe#torrent_upload_frame {
 
 div#torrent_container {
   top: 88px;
+  bottom: 34px;
 }
 
 ul.torrent_list li.torrent {
