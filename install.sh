@@ -1,6 +1,6 @@
-#/bin/sh
+#/bin/bash
 
-if [ "$UID" != "0" ]
+if [ "$(whoami)" != "root" ]
 	then echo "This script is not running as root... exiting" && exit 1
 fi
 
