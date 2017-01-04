@@ -26,9 +26,9 @@ div#toolbar > div#toolbar-inspector {
 div#toolbar > div#toolbar-inspector {
   background-image: url("images/soft-light-theme/toolbar-info.png");}
 
-div#torrent_inspector li.inspector_tracker_entry.odd {
-  background-color: #efef00;
-}
+/*div#torrent_inspector li.inspector_tracker_entry.odd {
+  background-color: #f5f5f5;
+}*/
 
 /* STATUSBAR */
 
