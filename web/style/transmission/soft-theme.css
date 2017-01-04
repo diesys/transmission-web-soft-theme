@@ -48,13 +48,14 @@ div#toolbar > div#toolbar-inspector {
 /* STATUSBAR */
 
 #statusbar {
-  top: 48px;
+  top: 40px;
   height: 42px;
   position: fixed;
   background-image: none;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 0px;
+  padding-top: 6px;
+  padding-bottom: 0;
   z-index: 10;
   font-size: 1.15em;
   text-align: left;
@@ -85,27 +86,9 @@ div#toolbar > div#toolbar-inspector {
 #statusbar #speed-info {
   position: relative;
   height: 32px;
-  padding: 4px;
-  padding-top: 2px;
-  top: 0px;
+  padding: 5px;
+  padding-top: 10px;
   right: 20px;
-}
-
-#statusbar #speed-info * {
-  display: inline-block;
-  font-size: 1em;
-}
-
-#speed-dn-container {
-  position: relative;
-  top: 14px;
-  right: -58px;
-  margin: 5px;
-}
-
-#speed-up-container {
-  display: block;
-  top: -30px;
 }
 
 #statusbar select, select {
@@ -398,7 +381,6 @@ div.dialog_container {
 
 div.dialog_container div.dialog_window {
   padding: 15px 15px 10px 0px;
-  width: auto;
   max-width: 50%;
   overflow: hidden;
   border: none;
@@ -499,12 +481,12 @@ iframe#torrent_upload_frame {
 /* TORRENT CONTAINER and TORRENT LIST */
 
 div#torrent_container {
-  top: 90px;
+  top: 88px;
 }
 
 ul.torrent_list li.torrent {
   font-size: 1.1em;
-  padding-left: 10px;
+  padding-left: 8px;
   padding-top: 8px;
 }
 
@@ -593,4 +575,8 @@ ul.torrent_list div.torrent_progress_bar.incomplete.leeching.queued {
 ul.torrent_list div.torrent_progress_bar.incomplete.seeding {
   border-color: #199D25;
   background-color: #199D25;
+}
+
+ul.torrent_list li.torrent.compact {
+  padding: 6px 8px 6px 8px;
 }
