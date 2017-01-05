@@ -216,7 +216,7 @@ div.torrent_footer {
   font-size: 1.2em;
   position: fixed;
   background-image: none;
-  padding: 5px;
+  padding: 2px;
   z-index: 4;
 }
 
@@ -363,7 +363,7 @@ span .ui-button-icon-primary .ui-icon .ui-icon-closethick {
 }
 
 #torrent_context_menu {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #torrent_context_menu li {
@@ -481,8 +481,8 @@ iframe#torrent_upload_frame {
 /* TORRENT CONTAINER and TORRENT LIST */
 
 div#torrent_container {
-  top: 88px;
-  bottom: 34px;
+  top: 82px;
+  bottom: 28px;
 }
 
 ul.torrent_list li.torrent {
