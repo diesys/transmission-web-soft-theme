@@ -126,7 +126,7 @@ div#torrent_inspector {
   margin: 0;
   bottom: 0;
   animation: slidein .5s;
-  padding: 15px 15px 25px 25px;
+  padding: 15px 15px 25px 15px;
   font-size: 1.2em;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -215,6 +215,10 @@ div#torrent_inspector #inspector_header #torrent_inspector_name {
 
 div#torrent_inspector div.inspector_torrent_file_list_entry_name {
   font-size: 1em;
+}
+
+.prefs-section .row .value {
+  margin-left: 100px;
 }
 
 /* low high priority*/
