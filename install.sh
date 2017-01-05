@@ -7,7 +7,7 @@ fi
 if [ "$1" == "-u" ]
 	then
 		echo "Updating theme..."
-		git pull https://git.eigenlab.org/sbiego/transmission-web-soft-theme.git
+		git pull
 fi
 
 echo "Checking transmission installation..."
