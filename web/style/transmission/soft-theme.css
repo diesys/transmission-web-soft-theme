@@ -131,7 +131,7 @@ div#torrent_inspector {
   overflow-x: hidden;
   overflow-y: scroll;
   border-left: none;
-  width: 340px;
+  width: 30%;
 }
 
 div#torrent_inspector #inspector-page-info {
