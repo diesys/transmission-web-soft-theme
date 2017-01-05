@@ -140,7 +140,7 @@ div#torrent_inspector #inspector-page-info {
 
 div#torrent_inspector #inspector-tabs-wrapper {
   text-align: center;
-  margin: 30px 5px 50px 0px;
+  margin: 10px 5px 15px 0px;
 }
 
 div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > * {
@@ -208,6 +208,20 @@ div#torrent_inspector li.inspector_tracker_entry.odd {
 div.inspector_group_label {
   padding-bottom: 5px;
 }
+
+div#torrent_inspector #inspector_header #torrent_inspector_name {
+  font-size: 1.15em;
+}
+
+div#torrent_inspector div.inspector_torrent_file_list_entry_name {
+  font-size: 1em;
+}
+
+/* low high priority*/
+/*
+div.file-priority-radiobox > div.low {
+  background: url("images/file-priority-low.png"), #dcdcdc;
+}*/
 
 /* FOOTER */
 
