@@ -7,8 +7,6 @@ fi
 if [ "$1" == "-u" ]
 	then
 		echo "Updating theme..."
-		# mkdir .transmission-web-soft-theme-tmp
-		# cd .transmission-web-soft-theme-tmp
 		git pull https://git.eigenlab.org/sbiego/transmission-web-soft-theme.git
 fi
 
